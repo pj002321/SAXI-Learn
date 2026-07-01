@@ -36,6 +36,17 @@ print(sys.getsizeof(b))  # 24
 print(sys.getsizeof(c))  # 54 (49 + 글자 수)
 print(sys.getsizeof(d))  # 28
 
+a = 10
+
+print(*range(a))
+
+if a < 10:
+    print("a는 10보다 작습니다.")
+elif a == 10:
+    print("a는 10입니다.")
+else:
+    print("a는 10보다 크거나 같습니다.")
+
 # [1. Python 기초 자료구조]
 # - 리스트     : 순서 O, 수정/삭제 O, 중복 O  — 가장 범용적인 자료구조
 # - 튜플       : 순서 O, 수정/삭제 X, 중복 O  — 변경 불가, 안전한 데이터 보관
@@ -140,12 +151,4 @@ print(st)           # {1, 2, 3} (중복 자동 제거)
 
 # ================================================================
 
-a = 10
-print(*range(a))
 
-if a < 10:
-    print("a는 10보다 작습니다.")
-elif a == 10:
-    print("a는 10입니다.")
-else:
-    print("a는 10보다 크거나 같습니다.")
