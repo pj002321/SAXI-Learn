@@ -171,7 +171,7 @@ print(f"{'='*30}")
 
 print()
 stock_count = int(input("종목 수를 입력하세요: "))
-stocks = []
+stocks = [None] * stock_count
 
 for i in range(stock_count):
     print(f"\n[종목 {i+1}]")
@@ -179,7 +179,7 @@ for i in range(stock_count):
     buy_price = int(input("  매수가 (원): "))
     sell_price= int(input("  매도가 (원): "))
     quantity  = int(input("  수량 (주): "))
-    stocks.append([name, buy_price, sell_price, quantity])
+    stocks[i] = [name, buy_price, sell_price, quantity]
 
 print(f"\n{'='*45}")
 total_profit  = 0
